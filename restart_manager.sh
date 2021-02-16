@@ -1,7 +1,7 @@
 #echo "Stopping manager container......"
-docker-compose -f /home/rock64/monerobox/settings/manager.yml down
+docker-compose -f /home/pi/Code/monerobox/settings/manager.yml down
 #echo "Stopping web container......"
-docker-compose -f /home/rock64/monerobox/settings/web.yml down
+docker-compose -f /home/pi/Code/monerobox/settings/web.yml down
 
-cd /home/rock64/monerobox
+cd /home/pi/Code/monerobox
 ./start_manager.sh
