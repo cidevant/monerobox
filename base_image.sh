@@ -36,7 +36,10 @@ add-apt-repository \
 
 apt update
 
-apt install -y docker-ce docker-ce-cli containerd.io
+# apt install -y docker-ce docker-ce-cli containerd.io
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo bash get-docker.sh
+sudo usermod -aG docker pi
 
 # install docker-compose
 apt install -y python-pip python-setuptools python-dev libltdl7 libffi-dev
