@@ -25,17 +25,6 @@ apt install -y \
     gnupg-agent \
     software-properties-common
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
-apt-key fingerprint 0EBFCD88
-
-add-apt-repository \
-   "deb [arch=arm64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-
-apt update
-
 # apt install -y docker-ce docker-ce-cli containerd.io
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo bash get-docker.sh
